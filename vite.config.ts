@@ -17,7 +17,8 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') || filename.endsWith('.md') ? undefined : true
 			},
-			adapter: adapter()
+			adapter: adapter(),
+			paths: { base: process.env.BASE_PATH ?? '' }
 		})
 	]
 });
