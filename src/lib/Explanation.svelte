@@ -5,6 +5,6 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-{#if show.notes}
+{#if show.explanations}
 	<p lang="en" class="leading-relaxed text-neutral-600 dark:text-neutral-400">{@render children()}</p>
 {/if}
