@@ -1,11 +1,16 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import { columns, languageName } from './columns.svelte';
 
 	let { lang, children }: { lang: string; children: Snippet } = $props();
-	const name = $derived(new Intl.DisplayNames([lang], { type: 'language' }).of(lang));
+	const order = $derived(columns.left === lang ? 'order-1' : columns.right === lang ? 'order-2' : null);
 </script>
 
-<div {lang} class="space-y-3">
-	<div class="text-xs font-semibold tracking-wide text-neutral-500 uppercase">{name}</div>
-	{@render children()}
-</div>
+{#if order}
+	<div {lang} class="space-y-3 {order}">
+		<div class="text-xs font-semibold tracking-wide text-neutral-500 uppercase">
+			{languageName(lang)}
+		</div>
+		{@render children()}
+	</div>
+{/if}
