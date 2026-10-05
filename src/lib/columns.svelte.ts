@@ -2,6 +2,9 @@ export const languages = ['en', 'ja', 'sv'];
 
 export const columns = $state({ left: 'en', right: 'ja' });
 
+/** Show explanations and translations. */
+export const show = $state({ notes: true });
+
 /** Name of `lang`, in its own language unless `inLang` is given. */
 export const languageName = (lang: string, inLang = lang) =>
 	new Intl.DisplayNames([inLang], { type: 'language' }).of(lang);

@@ -9,7 +9,8 @@
 
 {#if order}
 	<div {lang} class="space-y-3 {order}">
-		<div class="text-xs font-semibold tracking-wide text-neutral-500 uppercase">
+		<!-- Columns stack below md, so the picker bar no longer labels them. -->
+		<div class="text-xs font-semibold tracking-wide text-neutral-500 uppercase md:hidden">
 			{languageName(lang)}
 		</div>
 		{#if children}
