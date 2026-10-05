@@ -1,5 +1,5 @@
 <script>
-	import { Demo, Example, W } from '$lib';
+	import { Demo, Example, S, V, O, T, P, C } from '$lib';
 </script>
 
 <!-- Word order -->
@@ -9,10 +9,10 @@
 Subject–verb–object.
 
 <Example translation="I eat sushi.">
-	<W role="subject">Jag</W> <W role="verb">äter</W> <W role="object">sushi</W>.
+	<S>Jag</S> <V>äter</V> <O>sushi</O>.
 </Example>
 <Example translation="The dog bit the man.">
-	<W role="subject">Hunden</W> <W role="verb">bet</W> <W role="object">mannen</W>.
+	<S>Hunden</S> <V>bet</V> <O>mannen</O>.
 </Example>
 
 </Demo>
@@ -22,7 +22,7 @@ Subject–verb–object.
 Meaning flips.
 
 <Example translation="The man bit the dog.">
-	<W role="subject">Mannen</W> <W role="verb">bet</W> <W role="object">hunden</W>.
+	<S>Mannen</S> <V>bet</V> <O>hunden</O>.
 </Example>
 
 </Demo>
@@ -32,10 +32,10 @@ Meaning flips.
 The verb is always second; fronting something else puts the subject after it.
 
 <Example translation="Today I eat sushi. (lit. “Today eat I sushi.”)">
-	<W role="time">Idag</W> <W role="verb">äter</W> <W role="subject">jag</W> <W role="object">sushi</W>.
+	<T>Idag</T> <V>äter</V> <S>jag</S> <O>sushi</O>.
 </Example>
 <Example translation="I like eating sushi. (lit. “Sushi eat I gladly.”)">
-	<W role="object">Sushi</W> <W role="verb">äter</W> <W role="subject">jag</W> gärna.
+	<O>Sushi</O> <V>äter</V> <S>jag</S> gärna.
 </Example>
 
 </Demo>
@@ -45,8 +45,8 @@ The verb is always second; fronting something else puts the subject after it.
 After the object: place, then time.
 
 <Example translation="I eat sushi in Tokyo today.">
-	<W role="subject">Jag</W> <W role="verb">äter</W> <W role="object">sushi</W> i <W role="place">Tokyo</W>
-	<W role="time">idag</W>.
+	<S>Jag</S> <V>äter</V> <O>sushi</O> i <P>Tokyo</P>
+	<T>idag</T>.
 </Example>
 
 </Demo>
@@ -56,8 +56,8 @@ After the object: place, then time.
 Prepositions go before the noun.
 
 <Example translation="I am going from Osaka to Tokyo.">
-	<W role="subject">Jag</W> <W role="verb">åker</W> från <W role="place">Osaka</W> till
-	<W role="place">Tokyo</W>.
+	<S>Jag</S> <V>åker</V> från <P>Osaka</P> till
+	<P>Tokyo</P>.
 </Example>
 
 </Demo>
@@ -67,10 +67,10 @@ Prepositions go before the noun.
 Yes/no questions start with the verb; question words go first, then V2.
 
 <Example translation="Do you eat sushi? (lit. “Eat you sushi?”)">
-	<W role="verb">Äter</W> <W role="subject">du</W> <W role="object">sushi</W>?
+	<V>Äter</V> <S>du</S> <O>sushi</O>?
 </Example>
 <Example translation="What do you eat? (lit. “What eat you?”)">
-	<W role="object">Vad</W> <W role="verb">äter</W> <W role="subject">du</W>?
+	<O>Vad</O> <V>äter</V> <S>du</S>?
 </Example>
 
 </Demo>
@@ -80,11 +80,11 @@ Yes/no questions start with the verb; question words go first, then V2.
 No V2 in subclauses, and “inte” (not) moves before the verb.
 
 <Example translation="He doesn't eat sushi. (lit. “He eats not sushi.”)">
-	<W role="subject">Han</W> <W role="verb">äter</W> inte <W role="object">sushi</W>.
+	<S>Han</S> <V>äter</V> inte <O>sushi</O>.
 </Example>
 <Example translation="I think that he doesn't eat sushi. (lit. “…that he not eats sushi.”)">
-	Jag tror <W role="link">att</W> <W role="subject">han</W> inte <W role="verb">äter</W>
-	<W role="object">sushi</W>.
+	Jag tror <C>att</C> <S>han</S> inte <V>äter</V>
+	<O>sushi</O>.
 </Example>
 
 </Demo>
@@ -94,7 +94,7 @@ No V2 in subclauses, and “inte” (not) moves before the verb.
 The clause follows the noun, introduced by “som”.
 
 <Example translation="the dog that bit the man">
-	<W role="subject">hunden</W> <W role="link">som</W> <W role="verb">bet</W> <W role="object">mannen</W>
+	<S>hunden</S> <C>som</C> <V>bet</V> <O>mannen</O>
 </Example>
 
 </Demo>
@@ -104,14 +104,14 @@ The clause follows the noun, introduced by “som”.
 <Demo row="Subject clear from context">
 
 <Example translation="What did you do yesterday? — I watched a movie.">
-	Vad gjorde du igår? — <W role="subject">Jag</W>
-	<W role="verb">såg</W> <W role="object">en film</W>.
+	Vad gjorde du igår? — <S>Jag</S>
+	<V>såg</V> <O>en film</O>.
 </Example>
 
 Dropping it is casual or diary style only:
 
 <Example translation="Watched a movie.">
-	<W role="verb">Såg</W> <W role="object">en film</W>.
+	<V>Såg</V> <O>en film</O>.
 </Example>
 
 </Demo>
@@ -119,10 +119,10 @@ Dropping it is casual or diary style only:
 <Demo row="Dummy subjects">
 
 <Example translation="It is raining.">
-	<W role="subject">Det</W> <W role="verb">regnar</W>.
+	<S>Det</S> <V>regnar</V>.
 </Example>
 <Example translation="There is a cat.">
-	<W role="subject">Det</W> <W role="verb">finns</W> en katt.
+	<S>Det</S> <V>finns</V> en katt.
 </Example>
 
 </Demo>
@@ -134,10 +134,10 @@ Dropping it is casual or diary style only:
 “en” or “ett” (by gender) before the noun for new; a suffix for known.
 
 <Example translation="A dog is barking.">
-	<W role="subject">En hund</W> <W role="verb">skäller</W>.
+	<S>En hund</S> <V>skäller</V>.
 </Example>
 <Example translation="The dog is barking.">
-	<W role="subject">Hunden</W> <W role="verb">skäller</W>.
+	<S>Hunden</S> <V>skäller</V>.
 </Example>
 
 </Demo>
@@ -147,10 +147,10 @@ Dropping it is casual or diary style only:
 The ending depends on the noun (hundar, katter, hus); some don't change.
 
 <Example translation="There is a dog.">
-	<W role="subject">Det</W> <W role="verb">finns</W> en hund.
+	<S>Det</S> <V>finns</V> en hund.
 </Example>
 <Example translation="There are two dogs.">
-	<W role="subject">Det</W> <W role="verb">finns</W> två hundar.
+	<S>Det</S> <V>finns</V> två hundar.
 </Example>
 
 </Demo>
@@ -162,10 +162,10 @@ The ending depends on the noun (hundar, katter, hus); some don't change.
 The verb never changes for the subject.
 
 <Example translation="I eat sushi.">
-	<W role="subject">Jag</W> <W role="verb">äter</W> <W role="object">sushi</W>.
+	<S>Jag</S> <V>äter</V> <O>sushi</O>.
 </Example>
 <Example translation="She eats sushi.">
-	<W role="subject">Hon</W> <W role="verb">äter</W> <W role="object">sushi</W>.
+	<S>Hon</S> <V>äter</V> <O>sushi</O>.
 </Example>
 
 </Demo>
@@ -175,10 +175,10 @@ The verb never changes for the subject.
 Usually -de or -te, with many irregulars.
 
 <Example translation="I watched a movie.">
-	<W role="subject">Jag</W> <W role="verb">tittade</W> på <W role="object">en film</W>.
+	<S>Jag</S> <V>tittade</V> på <O>en film</O>.
 </Example>
 <Example translation="I ate sushi.">
-	<W role="subject">Jag</W> <W role="verb">åt</W> <W role="object">sushi</W>.
+	<S>Jag</S> <V>åt</V> <O>sushi</O>.
 </Example>
 
 </Demo>
@@ -188,7 +188,7 @@ Usually -de or -te, with many irregulars.
 “inte” after the verb (before it in subclauses).
 
 <Example translation="I don't eat sushi. (lit. “I eat not sushi.”)">
-	<W role="subject">Jag</W> <W role="verb">äter</W> inte <W role="object">sushi</W>.
+	<S>Jag</S> <V>äter</V> inte <O>sushi</O>.
 </Example>
 
 </Demo>

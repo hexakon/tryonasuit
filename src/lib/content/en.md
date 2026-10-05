@@ -1,5 +1,5 @@
 <script>
-	import { Demo, Example, W } from '$lib';
+	import { Demo, Example, S, V, O, T, P, C } from '$lib';
 </script>
 
 <!-- Word order -->
@@ -9,10 +9,10 @@
 Subject–verb–object.
 
 <Example>
-	<W role="subject">I</W> <W role="verb">eat</W> <W role="object">sushi</W>.
+	<S>I</S> <V>eat</V> <O>sushi</O>.
 </Example>
 <Example>
-	<W role="subject">The dog</W> <W role="verb">bit</W> <W role="object">the man</W>.
+	<S>The dog</S> <V>bit</V> <O>the man</O>.
 </Example>
 
 </Demo>
@@ -22,7 +22,7 @@ Subject–verb–object.
 Meaning flips.
 
 <Example>
-	<W role="subject">The man</W> <W role="verb">bit</W> <W role="object">the dog</W>.
+	<S>The man</S> <V>bit</V> <O>the dog</O>.
 </Example>
 
 </Demo>
@@ -34,8 +34,8 @@ Meaning flips.
 After the object: place, then time.
 
 <Example>
-	<W role="subject">I</W> <W role="verb">eat</W> <W role="object">sushi</W> in <W role="place">Tokyo</W>
-	<W role="time">today</W>.
+	<S>I</S> <V>eat</V> <O>sushi</O> in <P>Tokyo</P>
+	<T>today</T>.
 </Example>
 
 </Demo>
@@ -45,8 +45,8 @@ After the object: place, then time.
 Prepositions go before the noun.
 
 <Example>
-	<W role="subject">I</W> <W role="verb">am going</W> from <W role="place">Osaka</W> to
-	<W role="place">Tokyo</W>.
+	<S>I</S> <V>am going</V> from <P>Osaka</P> to
+	<P>Tokyo</P>.
 </Example>
 
 </Demo>
@@ -56,10 +56,10 @@ Prepositions go before the noun.
 Yes/no questions add “do” before the subject; question words go first.
 
 <Example>
-	<W role="verb">Do</W> <W role="subject">you</W> <W role="verb">eat</W> <W role="object">sushi</W>?
+	<V>Do</V> <S>you</S> <V>eat</V> <O>sushi</O>?
 </Example>
 <Example>
-	<W role="object">What</W> <W role="verb">do</W> <W role="subject">you</W> <W role="verb">eat</W>?
+	<O>What</O> <V>do</V> <S>you</S> <V>eat</V>?
 </Example>
 
 </Demo>
@@ -69,11 +69,11 @@ Yes/no questions add “do” before the subject; question words go first.
 Same order as a main clause.
 
 <Example>
-	<W role="subject">He</W> <W role="verb">doesn't eat</W> <W role="object">sushi</W>.
+	<S>He</S> <V>doesn't eat</V> <O>sushi</O>.
 </Example>
 <Example>
-	I think <W role="link">that</W> <W role="subject">he</W> <W role="verb">doesn't eat</W>
-	<W role="object">sushi</W>.
+	I think <C>that</C> <S>he</S> <V>doesn't eat</V>
+	<O>sushi</O>.
 </Example>
 
 </Demo>
@@ -83,7 +83,7 @@ Same order as a main clause.
 The clause follows the noun, introduced by “that”/“who”.
 
 <Example>
-	<W role="subject">the dog</W> <W role="link">that</W> <W role="verb">bit</W> <W role="object">the man</W>
+	<S>the dog</S> <C>that</C> <V>bit</V> <O>the man</O>
 </Example>
 
 </Demo>
@@ -93,22 +93,22 @@ The clause follows the noun, introduced by “that”/“who”.
 <Demo row="Subject clear from context">
 
 <Example>
-	What did you do yesterday? — <W role="subject">I</W>
-	<W role="verb">watched</W> <W role="object">a movie</W>.
+	What did you do yesterday? — <S>I</S>
+	<V>watched</V> <O>a movie</O>.
 </Example>
 
 Dropping it is casual or diary style only:
 
 <Example>
-	<W role="verb">Watched</W> <W role="object">a movie</W>.
+	<V>Watched</V> <O>a movie</O>.
 </Example>
 
 </Demo>
 
 <Demo row="Dummy subjects">
 
-<Example><W role="subject">It</W> <W role="verb">is raining</W>.</Example>
-<Example><W role="subject">There</W> <W role="verb">is</W> a cat.</Example>
+<Example><S>It</S> <V>is raining</V>.</Example>
+<Example><S>There</S> <V>is</V> a cat.</Example>
 
 </Demo>
 
@@ -118,8 +118,8 @@ Dropping it is casual or diary style only:
 
 Articles go before the noun: “a” new, “the” known.
 
-<Example><W role="subject">A dog</W> <W role="verb">is barking</W>.</Example>
-<Example><W role="subject">The dog</W> <W role="verb">is barking</W>.</Example>
+<Example><S>A dog</S> <V>is barking</V>.</Example>
+<Example><S>The dog</S> <V>is barking</V>.</Example>
 
 </Demo>
 
@@ -127,8 +127,8 @@ Articles go before the noun: “a” new, “the” known.
 
 Usually -s, with some irregulars (man → men).
 
-<Example><W role="subject">There</W> <W role="verb">is</W> a dog.</Example>
-<Example><W role="subject">There</W> <W role="verb">are</W> two dogs.</Example>
+<Example><S>There</S> <V>is</V> a dog.</Example>
+<Example><S>There</S> <V>are</V> two dogs.</Example>
 
 </Demo>
 
@@ -138,8 +138,8 @@ Usually -s, with some irregulars (man → men).
 
 Only “he/she/it” in the present gets -s.
 
-<Example><W role="subject">I</W> <W role="verb">eat</W> <W role="object">sushi</W>.</Example>
-<Example><W role="subject">She</W> <W role="verb">eats</W> <W role="object">sushi</W>.</Example>
+<Example><S>I</S> <V>eat</V> <O>sushi</O>.</Example>
+<Example><S>She</S> <V>eats</V> <O>sushi</O>.</Example>
 
 </Demo>
 
@@ -148,9 +148,9 @@ Only “he/she/it” in the present gets -s.
 Usually -ed, with many irregulars.
 
 <Example>
-	<W role="subject">I</W> <W role="verb">watched</W> <W role="object">a movie</W>.
+	<S>I</S> <V>watched</V> <O>a movie</O>.
 </Example>
-<Example><W role="subject">I</W> <W role="verb">ate</W> <W role="object">sushi</W>.</Example>
+<Example><S>I</S> <V>ate</V> <O>sushi</O>.</Example>
 
 </Demo>
 
@@ -159,7 +159,7 @@ Usually -ed, with many irregulars.
 “do not” before the verb.
 
 <Example>
-	<W role="subject">I</W> <W role="verb">don't eat</W> <W role="object">sushi</W>.
+	<S>I</S> <V>don't eat</V> <O>sushi</O>.
 </Example>
 
 </Demo>

@@ -1,5 +1,5 @@
 <script>
-	import { Demo, Example, W } from '$lib';
+	import { Demo, Example, S, V, O, T, P, C } from '$lib';
 </script>
 
 <!-- Word order -->
@@ -9,10 +9,10 @@
 Subject–object–verb. Particles mark roles: は/が subject, を object.
 
 <Example translation="I eat sushi.">
-	<W role="subject">私</W>は<W role="object">寿司</W>を<W role="verb">食べる</W>。
+	<S>私</S>は<O>寿司</O>を<V>食べる</V>。
 </Example>
 <Example translation="The dog bit the man.">
-	<W role="subject">犬</W>が<W role="object">男</W>を<W role="verb">噛んだ</W>。
+	<S>犬</S>が<O>男</O>を<V>噛んだ</V>。
 </Example>
 
 </Demo>
@@ -22,7 +22,7 @@ Subject–object–verb. Particles mark roles: は/が subject, を object.
 Particles keep the roles; the fronted noun is emphasized.
 
 <Example translation="The dog bit the man.">
-	<W role="object">男</W>を<W role="subject">犬</W>が<W role="verb">噛んだ</W>。
+	<O>男</O>を<S>犬</S>が<V>噛んだ</V>。
 </Example>
 
 </Demo>
@@ -34,7 +34,7 @@ Particles keep the roles; the fronted noun is emphasized.
 Before the verb: usually time, then place, then object.
 
 <Example translation="I eat sushi in Tokyo today.">
-	<W role="subject">私</W>は<W role="time">今日</W><W role="place">東京</W>で<W role="object">寿司</W>を<W role="verb">食べる</W>。
+	<S>私</S>は<T>今日</T><P>東京</P>で<O>寿司</O>を<V>食べる</V>。
 </Example>
 
 </Demo>
@@ -44,7 +44,7 @@ Before the verb: usually time, then place, then object.
 Postpositions go after the noun: から “from”, へ/に “to”.
 
 <Example translation="I am going from Osaka to Tokyo.">
-	<W role="subject">私</W>は<W role="place">大阪</W>から<W role="place">東京</W>へ<W role="verb">行く</W>。
+	<S>私</S>は<P>大阪</P>から<P>東京</P>へ<V>行く</V>。
 </Example>
 
 </Demo>
@@ -54,10 +54,10 @@ Postpositions go after the noun: から “from”, へ/に “to”.
 Order doesn't change. か marks a question; question words stay in place.
 
 <Example translation="Do (you) eat sushi?">
-	<W role="object">寿司</W>を<W role="verb">食べます</W>か？
+	<O>寿司</O>を<V>食べます</V>か？
 </Example>
 <Example translation="What do (you) eat?">
-	<W role="object">何</W>を<W role="verb">食べます</W>か？
+	<O>何</O>を<V>食べます</V>か？
 </Example>
 
 </Demo>
@@ -67,10 +67,10 @@ Order doesn't change. か marks a question; question words stay in place.
 The clause comes before the main verb, closed by と; the main verb stays last.
 
 <Example translation="He doesn't eat sushi.">
-	<W role="subject">彼</W>は<W role="object">寿司</W>を<W role="verb">食べない</W>。
+	<S>彼</S>は<O>寿司</O>を<V>食べない</V>。
 </Example>
 <Example translation="I think that he doesn't eat sushi.">
-	私は<W role="subject">彼</W>が<W role="object">寿司</W>を<W role="verb">食べない</W><W role="link">と</W>思う。
+	私は<S>彼</S>が<O>寿司</O>を<V>食べない</V><C>と</C>思う。
 </Example>
 
 </Demo>
@@ -80,7 +80,7 @@ The clause comes before the main verb, closed by と; the main verb stays last.
 The clause comes before the noun, with no relative pronoun.
 
 <Example translation="the dog that bit the man">
-	<W role="object">男</W>を<W role="verb">噛んだ</W><W role="subject">犬</W>
+	<O>男</O>を<V>噛んだ</V><S>犬</S>
 </Example>
 
 </Demo>
@@ -92,7 +92,7 @@ The clause comes before the noun, with no relative pronoun.
 Left out when clear from context.
 
 <Example translation="What did you do yesterday? — (I) watched a movie.">
-	昨日何をした？ — <W role="object">映画</W>を<W role="verb">見た</W>。
+	昨日何をした？ — <O>映画</O>を<V>見た</V>。
 </Example>
 
 </Demo>
@@ -102,10 +102,10 @@ Left out when clear from context.
 No dummy subjects; the real subject fills the slot.
 
 <Example translation="It is raining. (lit. “Rain is falling.”)">
-	<W role="subject">雨</W>が<W role="verb">降っている</W>。
+	<S>雨</S>が<V>降っている</V>。
 </Example>
 <Example translation="There is a cat. (lit. “A cat exists.”)">
-	<W role="subject">猫</W>が<W role="verb">いる</W>。
+	<S>猫</S>が<V>いる</V>。
 </Example>
 
 </Demo>
@@ -117,10 +117,10 @@ No dummy subjects; the real subject fills the slot.
 No articles; context decides. その “that” can point back to something known.
 
 <Example translation="A dog / The dog is barking.">
-	<W role="subject">犬</W>が<W role="verb">吠えている</W>。
+	<S>犬</S>が<V>吠えている</V>。
 </Example>
 <Example translation="That dog is barking.">
-	<W role="subject">その犬</W>が<W role="verb">吠えている</W>。
+	<S>その犬</S>が<V>吠えている</V>。
 </Example>
 
 </Demo>
@@ -130,10 +130,10 @@ No articles; context decides. その “that” can point back to something know
 Nouns don't mark plural. Numbers take a counter word, here 匹 for small animals.
 
 <Example translation="There is a dog. / There are dogs.">
-	<W role="subject">犬</W>が<W role="verb">いる</W>。
+	<S>犬</S>が<V>いる</V>。
 </Example>
 <Example translation="There are two dogs.">
-	<W role="subject">犬</W>が二匹<W role="verb">いる</W>。
+	<S>犬</S>が二匹<V>いる</V>。
 </Example>
 
 </Demo>
@@ -145,10 +145,10 @@ Nouns don't mark plural. Numbers take a counter word, here 匹 for small animals
 The verb never changes for the subject.
 
 <Example translation="I eat sushi.">
-	<W role="subject">私</W>は<W role="object">寿司</W>を<W role="verb">食べる</W>。
+	<S>私</S>は<O>寿司</O>を<V>食べる</V>。
 </Example>
 <Example translation="She eats sushi.">
-	<W role="subject">彼女</W>は<W role="object">寿司</W>を<W role="verb">食べる</W>。
+	<S>彼女</S>は<O>寿司</O>を<V>食べる</V>。
 </Example>
 
 </Demo>
@@ -158,10 +158,10 @@ The verb never changes for the subject.
 A regular -た ending; only a few irregulars.
 
 <Example translation="I watched a movie.">
-	<W role="subject">私</W>は<W role="object">映画</W>を<W role="verb">見た</W>。
+	<S>私</S>は<O>映画</O>を<V>見た</V>。
 </Example>
 <Example translation="I ate sushi.">
-	<W role="subject">私</W>は<W role="object">寿司</W>を<W role="verb">食べた</W>。
+	<S>私</S>は<O>寿司</O>を<V>食べた</V>。
 </Example>
 
 </Demo>
@@ -171,10 +171,10 @@ A regular -た ending; only a few irregulars.
 A negative ending on the verb: -ない, past -なかった.
 
 <Example translation="I don't eat sushi.">
-	<W role="subject">私</W>は<W role="object">寿司</W>を<W role="verb">食べない</W>。
+	<S>私</S>は<O>寿司</O>を<V>食べない</V>。
 </Example>
 <Example translation="I didn't eat sushi.">
-	<W role="subject">私</W>は<W role="object">寿司</W>を<W role="verb">食べなかった</W>。
+	<S>私</S>は<O>寿司</O>を<V>食べなかった</V>。
 </Example>
 
 </Demo>
