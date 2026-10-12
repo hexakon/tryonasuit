@@ -1,7 +1,6 @@
 <script lang="ts">
-	import Section from '$lib/Section.svelte';
-	import Row from '$lib/Row.svelte';
 	import W from '$lib/W.svelte';
+	import Content from '$lib/content.md';
 	import { setToc } from '$lib/toc';
 	import { columns, languages, languageName, pick, show } from '$lib/columns.svelte';
 
@@ -48,32 +47,7 @@
 		{/each}
 	</nav>
 
-	<Section title="Word order">
-		<Row title="Basic order" />
-		<Row title="Swapping subject and object" />
-		<Row title="Verb-second (V2)" />
-		<Row title="Time and place" />
-		<Row title="Direction" />
-		<Row title="Questions" />
-		<Row title="Subordinate clauses" />
-		<Row title="Relative clauses" />
-	</Section>
-
-	<Section title="Subject omission">
-		<Row title="Subject clear from context" />
-		<Row title="Dummy subjects" />
-	</Section>
-
-	<Section title="Nouns">
-		<Row title="Definiteness" />
-		<Row title="Plurals" />
-	</Section>
-
-	<Section title="Verbs">
-		<Row title="Agreement with the subject" />
-		<Row title="Past tense" />
-		<Row title="Negation" />
-	</Section>
+	<Content />
 </main>
 
 <!-- After <main> in markup so sections have registered; order-first puts it on the left. -->
